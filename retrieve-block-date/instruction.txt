@@ -1,0 +1,14 @@
+Retrieve Block Date
+Instructions
+Using Node.js, create and exports a function retrieveBlockDate() that takes as input the height of a block and returns the date of this block. The script must connect to a local node available on localhost:18443, with the user leeloo and the password multipass.
+
+Usage
+retrieveBlockDate(1881467) // Expected : 1604607528
+
+Notions
+Node.js https module
+Async function in Javascript
+Exports module
+bitcoin core rpc
+bitcoin-core js
+
