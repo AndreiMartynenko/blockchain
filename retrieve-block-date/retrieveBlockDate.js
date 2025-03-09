@@ -1,7 +1,7 @@
 const Client = require('bitcoin-core');
 
 const client = new Client({
-  network: 'regtest', // Change if needed
+  network: 'testnet', // Change 'regtest' to 'testnet'
   host: 'localhost',
   port: 18443,
   username: 'leeloo',
@@ -16,7 +16,7 @@ async function retrieveBlockDate(blockHeight) {
     // Get block data using block hash
     const block = await client.command('getblock', blockHash);
     
-    // Return block time
+    // Return block time (Unix timestamp)
     return block.time;
   } catch (error) {
     console.error('Error retrieving block date:', error);
